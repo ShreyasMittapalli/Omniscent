@@ -1,0 +1,7 @@
+ticker,filing_type,filing_date,accession_number,url,summary
+BAC,10-K,2025-02-25,0000070858-25-000139,https://www.sec.gov/Archives/edgar/data/70858/000007085825000139/bac-20241231.htm,BAC 10-K filed on 2025-02-25
+BAC,8-K,2025-02-28,0000070858-25-000147,https://www.sec.gov/Archives/edgar/data/70858/000007085825000147/bac-20250225.htm,BAC 8-K filed on 2025-02-28
+BAC,8-K,2025-04-15,0000070858-25-000187,https://www.sec.gov/Archives/edgar/data/70858/000007085825000187/bac-20250415.htm,BAC 8-K filed on 2025-04-15
+BAC,8-K,2025-04-24,0000070858-25-000195,https://www.sec.gov/Archives/edgar/data/70858/000007085825000195/bac-20250422.htm,BAC 8-K filed on 2025-04-24
+BAC,8-K,2025-04-29,0001193125-25-103911,https://www.sec.gov/Archives/edgar/data/70858/000119312525103911/d561572d8k.htm,BAC 8-K filed on 2025-04-29
+BAC,10-Q,2025-04-30,0000070858-25-000200,https://www.sec.gov/Archives/edgar/data/70858/000007085825000200/bac-20250331.htm,BAC 10-Q filed on 2025-04-30

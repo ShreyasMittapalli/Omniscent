@@ -1,0 +1,7 @@
+ticker,filing_type,filing_date,accession_number,url,summary
+GS,8-K,2025-02-26,0001193125-25-036755,https://www.sec.gov/Archives/edgar/data/886982/000119312525036755/d847633d8k.htm,GS 8-K filed on 2025-02-26
+GS,10-K,2025-02-27,0000886982-25-000005,https://www.sec.gov/Archives/edgar/data/886982/000088698225000005/gs-20241231.htm,GS 10-K filed on 2025-02-27
+GS,8-K,2025-04-14,0001193125-25-079625,https://www.sec.gov/Archives/edgar/data/886982/000119312525079625/d750054d8k.htm,GS 8-K filed on 2025-04-14
+GS,8-K,2025-04-23,0001193125-25-091404,https://www.sec.gov/Archives/edgar/data/886982/000119312525091404/d933184d8k.htm,GS 8-K filed on 2025-04-23
+GS,8-K,2025-04-24,0001193125-25-093530,https://www.sec.gov/Archives/edgar/data/886982/000119312525093530/d787120d8k.htm,GS 8-K filed on 2025-04-24
+GS,10-Q,2025-05-02,0000886982-25-000009,https://www.sec.gov/Archives/edgar/data/886982/000088698225000009/gs-20250331.htm,GS 10-Q filed on 2025-05-02

@@ -1,0 +1,19 @@
+{
+  "stock_prices_rows": 76354,
+  "stock_prices_dates": "2020-01-02 to 2025-06-30",
+  "stock_prices_tickers": 56,
+  "news_articles_rows": 10500,
+  "news_articles_dates": "2020-01-01 to 2025-06-30",
+  "social_sentiment_rows": 62658,
+  "social_sentiment_dates": "2020-01-01 to 2025-06-30",
+  "sec_filings_rows": 1253,
+  "sec_filings_dates": "2020-01-03 to 2025-06-24",
+  "macro_indicators_rows": 8914,
+  "macro_indicators_dates": "2020-01-01 to 2025-06-30",
+  "stock_prices_future_leak": 0,
+  "news_articles_future_leak": 0,
+  "social_sentiment_future_leak": 0,
+  "sec_filings_future_leak": 0,
+  "macro_indicators_future_leak": 0,
+  "db_size_mb": 19.6
+}
