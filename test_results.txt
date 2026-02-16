@@ -1,0 +1,103 @@
+﻿============================= test session starts =============================
+platform win32 -- Python 3.12.0, pytest-9.0.2, pluggy-1.6.0 -- C:\Program Files\Python312\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\shrey\OneDrive\Desktop\Omniscent
+plugins: anyio-4.1.0
+collecting ... collected 61 items
+
+tests/test_data_access_layer.py::TestStockPrices::test_returns_dataframe PASSED [  1%]
+tests/test_data_access_layer.py::TestStockPrices::test_no_future_data PASSED [  3%]
+tests/test_data_access_layer.py::TestStockPrices::test_respects_days_back PASSED [  4%]
+tests/test_data_access_layer.py::TestStockPrices::test_explicit_start_date PASSED [  6%]
+tests/test_data_access_layer.py::TestStockPrices::test_changing_sim_date_changes_results FAILED [  8%]
+tests/test_data_access_layer.py::TestNewsArticles::test_returns_list PASSED [  9%]
+tests/test_data_access_layer.py::TestNewsArticles::test_no_future_data PASSED [ 11%]
+tests/test_data_access_layer.py::TestNewsArticles::test_article_keys PASSED [ 13%]
+tests/test_data_access_layer.py::TestSocialSentiment::test_returns_dataframe PASSED [ 14%]
+tests/test_data_access_layer.py::TestSocialSentiment::test_no_future_data PASSED [ 16%]
+tests/test_data_access_layer.py::TestSocialSentiment::test_platform_filter PASSED [ 18%]
+tests/test_data_access_layer.py::TestSECFilings::test_returns_list PASSED [ 19%]
+tests/test_data_access_layer.py::TestSECFilings::test_no_future_data PASSED [ 21%]
+tests/test_data_access_layer.py::TestSECFilings::test_filing_type_filter PASSED [ 22%]
+tests/test_data_access_layer.py::TestMacroIndicators::test_returns_dataframe PASSED [ 24%]
+tests/test_data_access_layer.py::TestMacroIndicators::test_no_future_data PASSED [ 26%]
+tests/test_data_access_layer.py::TestMarketSnapshot::test_snapshot_keys PASSED [ 27%]
+tests/test_data_access_layer.py::TestMarketSnapshot::test_snapshot_date PASSED [ 29%]
+tests/test_data_access_layer.py::TestEdgeCases::test_very_early_sim_date PASSED [ 31%]
+tests/test_data_access_layer.py::TestEdgeCases::test_unknown_ticker_returns_empty PASSED [ 32%]
+tests/test_data_access_layer.py::TestEdgeCases::test_available_tickers PASSED [ 34%]
+tests/test_helpers.py::TestTradingCalendar::test_no_weekends PASSED      [ 36%]
+tests/test_helpers.py::TestTradingCalendar::test_excludes_mlk_day PASSED [ 37%]
+tests/test_helpers.py::TestTradingCalendar::test_excludes_christmas PASSED [ 39%]
+tests/test_helpers.py::TestTradingCalendar::test_inclusive_boundaries PASSED [ 40%]
+tests/test_helpers.py::TestTradingCalendar::test_accepts_string_dates PASSED [ 42%]
+tests/test_helpers.py::TestTradingCalendar::test_accepts_date_objects PASSED [ 44%]
+tests/test_helpers.py::TestTradingCalendar::test_holidays_count_2024 PASSED [ 45%]
+tests/test_helpers.py::TestTradingCalendar::test_good_friday_2024 PASSED [ 47%]
+tests/test_helpers.py::TestReturns::test_basic_returns PASSED            [ 49%]
+tests/test_helpers.py::TestReturns::test_custom_period PASSED            [ 50%]
+tests/test_helpers.py::TestMovingAverages::test_sma_columns_added PASSED [ 52%]
+tests/test_helpers.py::TestMovingAverages::test_does_not_mutate_original PASSED [ 54%]
+tests/test_helpers.py::TestMovingAverages::test_sma_correctness PASSED   [ 55%]
+tests/test_helpers.py::TestEMA::test_ema_returns_series PASSED           [ 57%]
+tests/test_helpers.py::TestVolatility::test_positive_for_volatile_data PASSED [ 59%]
+tests/test_helpers.py::TestRSI::test_rsi_range PASSED                    [ 60%]
+tests/test_helpers.py::TestRSI::test_rsi_high_after_rally PASSED         [ 62%]
+tests/test_helpers.py::TestDateRangeValidator::test_valid_range PASSED   [ 63%]
+tests/test_helpers.py::TestDateRangeValidator::test_start_after_end_raises PASSED [ 65%]
+tests/test_helpers.py::TestDateRangeValidator::test_end_after_cutoff_raises PASSED [ 67%]
+tests/test_helpers.py::TestDateRangeValidator::test_at_cutoff_boundary PASSED [ 68%]
+tests/test_temporal_controller.py::TestSingleton::test_same_instance PASSED [ 70%]
+tests/test_temporal_controller.py::TestSingleton::test_reset_creates_new_instance PASSED [ 72%]
+tests/test_temporal_controller.py::TestSimulationDate::test_set_and_read PASSED [ 73%]
+tests/test_temporal_controller.py::TestSimulationDate::test_unset_raises PASSED [ 75%]
+tests/test_temporal_controller.py::TestSimulationDate::test_invalid_format_raises PASSED [ 77%]
+tests/test_temporal_controller.py::TestSimulationDate::test_overwrite PASSED [ 78%]
+tests/test_temporal_controller.py::TestFutureDetection::test_future_returns_true PASSED [ 80%]
+tests/test_temporal_controller.py::TestFutureDetection::test_past_returns_false PASSED [ 81%]
+tests/test_temporal_controller.py::TestFutureDetection::test_same_instant_returns_false PASSED [ 83%]
+tests/test_temporal_controller.py::TestFutureDetection::test_one_second_after_is_future PASSED [ 85%]
+tests/test_temporal_controller.py::TestAdvanceTime::test_advance_one_day PASSED [ 86%]
+tests/test_temporal_controller.py::TestAdvanceTime::test_advance_multiple_days PASSED [ 88%]
+tests/test_temporal_controller.py::TestAdvanceTime::test_advance_without_set_raises PASSED [ 90%]
+tests/test_temporal_controller.py::TestLLMContext::test_contains_date PASSED [ 91%]
+tests/test_temporal_controller.py::TestLLMContext::test_contains_year PASSED [ 93%]
+tests/test_temporal_controller.py::TestHistory::test_history_records_all PASSED [ 95%]
+tests/test_temporal_controller.py::TestHistory::test_history_is_copy PASSED [ 96%]
+tests/test_temporal_controller.py::TestRepr::test_repr_unset PASSED      [ 98%]
+tests/test_temporal_controller.py::TestRepr::test_repr_set PASSED        [100%]
+
+================================== FAILURES ===================================
+___________ TestStockPrices.test_changing_sim_date_changes_results ____________
+
+self = <tests.test_data_access_layer.TestStockPrices object at 0x0000026B6DDBDA00>
+
+    def test_changing_sim_date_changes_results(self):
+        tc = TemporalController()
+    
+        tc.set_simulation_date("2024-03-01")
+        dal = TemporalDataAccessLayer(DB_PATH)
+        df_march = dal.get_stock_prices("AAPL", days_back=365)
+        max_march = pd.to_datetime(df_march["date"]).max()
+    
+        tc.set_simulation_date("2024-06-01")
+        df_june = dal.get_stock_prices("AAPL", days_back=365)
+        max_june = pd.to_datetime(df_june["date"]).max()
+    
+        assert max_march <= datetime(2024, 3, 1)
+        assert max_june <= datetime(2024, 6, 1)
+>       assert len(df_june) > len(df_march)
+E       assert 251 > 252
+E        +  where 251 = len(           date    open    high     low   close     volume\n0    2023-06-02  178.69  179.43  176.94  178.61   61996900\n1    2023-06-05  180.27  182.56  175.74  177.26  121946500\n2    2023-06-06  177.65  177.79  175.14  176.90   64848400\n3    2023-06-07  176.14  178.87  175.03  175.52   61944600\n4    2023-06-08  175.60  178.50  175.17  178.24   50214900\n..          ...     ...     ...     ...     ...        ...\n246  2024-05-24  187.37  189.12  186.60  188.52   36327000\n247  2024-05-28  190.04  191.52  187.65  188.53   52280100\n248  2024-05-29  188.15  190.77  188.06  188.83   53068000\n249  2024-05-30  189.30  190.71  189.17  189.82   49889100\n250  2024-05-31  189.97  191.09  188.45  190.77   75158300\n\n[251 rows x 6 columns])
+E        +  and   252 = len(           date    open    high     low   close     volume\n0    2023-03-02  142.32  144.61  141.85  143.83   52238100\n1    2023-03-03  145.93  148.95  145.23  148.87   70732300\n2    2023-03-06  151.59  154.07  151.27  151.63   87558000\n3    2023-03-07  151.51  151.83  148.97  149.44   56182000\n4    2023-03-08  150.63  151.28  149.66  150.69   47204800\n..          ...     ...     ...     ...     ...        ...\n247  2024-02-26  180.60  181.11  179.02  179.53   40867400\n248  2024-02-27  179.47  182.26  177.94  180.98   54318900\n249  2024-02-28  180.86  181.47  178.51  179.78   48953900\n250  2024-02-29  179.64  180.92  177.91  179.12  136682600\n251  2024-03-01  177.93  178.90  175.78  178.04   73563100\n\n[252 rows x 6 columns])
+
+tests\test_data_access_layer.py:79: AssertionError
+============================== warnings summary ===============================
+..\..\..\AppData\Roaming\Python\Python312\site-packages\dateutil\tz\tz.py:37
+  C:\Users\shrey\AppData\Roaming\Python\Python312\site-packages\dateutil\tz\tz.py:37: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+    EPOCH = datetime.datetime.utcfromtimestamp(0)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ===========================
+FAILED tests/test_data_access_layer.py::TestStockPrices::test_changing_sim_date_changes_results
+=================== 1 failed, 60 passed, 1 warning in 1.17s ===================

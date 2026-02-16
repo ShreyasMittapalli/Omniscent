@@ -1,0 +1,17 @@
+﻿....F........................................................            [100%]
+================================== FAILURES ===================================
+___________ TestStockPrices.test_changing_sim_date_changes_results ____________
+tests\test_data_access_layer.py:79: in test_changing_sim_date_changes_results
+    assert len(df_june) > len(df_march)
+E   assert 251 > 252
+E    +  where 251 = len(           date    open    high     low   close     volume\n0    2023-06-02  178.69  179.43  176.94  178.61   61996900\n...0  190.71  189.17  189.82   49889100\n250  2024-05-31  189.97  191.09  188.45  190.77   75158300\n\n[251 rows x 6 columns])
+E    +  and   252 = len(           date    open    high     low   close     volume\n0    2023-03-02  142.32  144.61  141.85  143.83   52238100\n...4  180.92  177.91  179.12  136682600\n251  2024-03-01  177.93  178.90  175.78  178.04   73563100\n\n[252 rows x 6 columns])
+============================== warnings summary ===============================
+..\..\..\AppData\Roaming\Python\Python312\site-packages\dateutil\tz\tz.py:37
+  C:\Users\shrey\AppData\Roaming\Python\Python312\site-packages\dateutil\tz\tz.py:37: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+    EPOCH = datetime.datetime.utcfromtimestamp(0)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ===========================
+FAILED tests/test_data_access_layer.py::TestStockPrices::test_changing_sim_date_changes_results
+1 failed, 60 passed, 1 warning in 1.04s
