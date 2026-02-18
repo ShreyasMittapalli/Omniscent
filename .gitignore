@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.whl
+
+# Virtual environments
+venv/
+.venv/
+env/
+.env/
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.settings/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+*.cover
+test_output.json
+test_results.txt
+test_short.txt
+verification_output.txt
+
+# Database
+*.db
+
+# OS files
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Misc
+db_check.json
